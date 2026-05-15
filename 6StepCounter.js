@@ -37,7 +37,7 @@ function stepCounter(counter) { // porque no enunciado requer mesmo a criação 
     return new StepCounter(counter);
 }
 
-const counter = { // funções nunca estão dentro da class apenas metodos
+const counter = { // funções/objetos nunca estão dentro da class apenas metodos
     steps: 0,
     changeBy: function(amount) { this.steps += amount; }
 };
