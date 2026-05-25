@@ -34,10 +34,11 @@ function fastestTrip(trips){
 }
 
 function tripsAbove(trips, minSpeed){
-
+return trips.filter(t => (t.distance / t.time) > minSpeed);
 }
 
 
 // Teste:
 console.log(averageSpeed(trips));
 console.log(fastestTrip(trips));
+console.log(tripsAbove(trips, 20));
